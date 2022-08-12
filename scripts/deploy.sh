@@ -1,0 +1,167 @@
+
+#!/bin/bash
+set -e
+export ACCOUNT_ID=nearlend-official.testnet
+export CONTRACT_ID=nft.$ACCOUNT_ID
+export TREASURY_ID=$ACCOUNT_ID
+export ROY1=$ACCOUNT_ID
+echo $CONTRACT_ID
+echo $ACCOUNT_ID
+
+
+# near delete $CONTRACT_ID $ACCOUNT_ID
+# near create-account $CONTRACT_ID --masterAccount $ACCOUNT_ID --initialBalance 40
+# near deploy $CONTRACT_ID --accountId $ACCOUNT_ID --wasmFile ../out/main.wasm
+
+# near call $CONTRACT_ID  new_default_meta '{"owner_id":"'$ACCOUNT_ID'", "treasury_id":"'$TREASURY_ID'"}' ---accountId $ACCOUNT_ID
+# near call $CONTRACT_ID nft_create_series '{"token_series_id":"1", "creator_id":"'$ACCOUNT_ID'","token_metadata":{"title": "Lang Biang - 001","media":"https://bafybeibkhcuq6s3drxtvyegtooc6wosudvbpzvhf5gtfy5xnwemp7mku6u.ipfs.nftstorage.link/Lang%20Biang%20%23001.png", "reference":"bafkreiceiix3c3q6eahprmo2aovs46sdkrfcrdz52c2ouojkul7uzk5zsa", "copies": 1},"price":"5000000000000000000000000", "royalty":{"'$ROY1'": 500}}' ---accountId $ACCOUNT_ID  --depositYocto 8540000000000000000000
+        
+#     near call $CONTRACT_ID nft_mint '{"token_series_id":"1","receiver_id": "'$ACCOUNT_ID'"}' --accountId $ACCOUNT_ID --depositYocto 11280000000000000000000
+#     near call $CONTRACT_ID nft_create_series '{"token_series_id":"2", "creator_id":"'$ACCOUNT_ID'","token_metadata":{"title": "Lang Biang - 002","media":"https://bafybeibkhcuq6s3drxtvyegtooc6wosudvbpzvhf5gtfy5xnwemp7mku6u.ipfs.nftstorage.link/Lang%20Biang%20%23002.png", "reference":"bafkreiceiix3c3q6eahprmo2aovs46sdkrfcrdz52c2ouojkul7uzk5zsa", "copies": 1},"price":"5000000000000000000000000", "royalty":{"'$ROY1'": 500}}' ---accountId $ACCOUNT_ID  --depositYocto 8540000000000000000000
+        
+#     near call $CONTRACT_ID nft_mint '{"token_series_id":"2","receiver_id": "'$ACCOUNT_ID'"}' --accountId $ACCOUNT_ID --depositYocto 11280000000000000000000
+#     near call $CONTRACT_ID nft_create_series '{"token_series_id":"3", "creator_id":"'$ACCOUNT_ID'","token_metadata":{"title": "Lang Biang - 003","media":"https://bafybeibkhcuq6s3drxtvyegtooc6wosudvbpzvhf5gtfy5xnwemp7mku6u.ipfs.nftstorage.link/Lang%20Biang%20%23003.png", "reference":"bafkreiceiix3c3q6eahprmo2aovs46sdkrfcrdz52c2ouojkul7uzk5zsa", "copies": 1},"price":"5000000000000000000000000", "royalty":{"'$ROY1'": 500}}' ---accountId $ACCOUNT_ID  --depositYocto 8540000000000000000000
+        
+    near call $CONTRACT_ID nft_mint '{"token_series_id":"3","receiver_id": "'$ACCOUNT_ID'"}' --accountId $ACCOUNT_ID --depositYocto 11280000000000000000000
+    near call $CONTRACT_ID nft_create_series '{"token_series_id":"4", "creator_id":"'$ACCOUNT_ID'","token_metadata":{"title": "Lang Biang - 004","media":"https://bafybeibkhcuq6s3drxtvyegtooc6wosudvbpzvhf5gtfy5xnwemp7mku6u.ipfs.nftstorage.link/Lang%20Biang%20%23004.png", "reference":"bafkreiceiix3c3q6eahprmo2aovs46sdkrfcrdz52c2ouojkul7uzk5zsa", "copies": 1},"price":"5000000000000000000000000", "royalty":{"'$ROY1'": 500}}' ---accountId $ACCOUNT_ID  --depositYocto 8540000000000000000000
+        
+    near call $CONTRACT_ID nft_mint '{"token_series_id":"4","receiver_id": "'$ACCOUNT_ID'"}' --accountId $ACCOUNT_ID --depositYocto 11280000000000000000000
+    near call $CONTRACT_ID nft_create_series '{"token_series_id":"5", "creator_id":"'$ACCOUNT_ID'","token_metadata":{"title": "Lang Biang - 005","media":"https://bafybeibkhcuq6s3drxtvyegtooc6wosudvbpzvhf5gtfy5xnwemp7mku6u.ipfs.nftstorage.link/Lang%20Biang%20%23005.png", "reference":"bafkreiceiix3c3q6eahprmo2aovs46sdkrfcrdz52c2ouojkul7uzk5zsa", "copies": 1},"price":"5000000000000000000000000", "royalty":{"'$ROY1'": 500}}' ---accountId $ACCOUNT_ID  --depositYocto 8540000000000000000000
+        
+    near call $CONTRACT_ID nft_mint '{"token_series_id":"5","receiver_id": "'$ACCOUNT_ID'"}' --accountId $ACCOUNT_ID --depositYocto 11280000000000000000000
+    near call $CONTRACT_ID nft_create_series '{"token_series_id":"6", "creator_id":"'$ACCOUNT_ID'","token_metadata":{"title": "Lang Biang - 006","media":"https://bafybeibkhcuq6s3drxtvyegtooc6wosudvbpzvhf5gtfy5xnwemp7mku6u.ipfs.nftstorage.link/Lang%20Biang%20%23006.png", "reference":"bafkreiceiix3c3q6eahprmo2aovs46sdkrfcrdz52c2ouojkul7uzk5zsa", "copies": 1},"price":"5000000000000000000000000", "royalty":{"'$ROY1'": 500}}' ---accountId $ACCOUNT_ID  --depositYocto 8540000000000000000000
+        
+    near call $CONTRACT_ID nft_mint '{"token_series_id":"6","receiver_id": "'$ACCOUNT_ID'"}' --accountId $ACCOUNT_ID --depositYocto 11280000000000000000000
+    near call $CONTRACT_ID nft_create_series '{"token_series_id":"7", "creator_id":"'$ACCOUNT_ID'","token_metadata":{"title": "Lang Biang - 007","media":"https://bafybeibkhcuq6s3drxtvyegtooc6wosudvbpzvhf5gtfy5xnwemp7mku6u.ipfs.nftstorage.link/Lang%20Biang%20%23007.png", "reference":"bafkreiceiix3c3q6eahprmo2aovs46sdkrfcrdz52c2ouojkul7uzk5zsa", "copies": 1},"price":"5000000000000000000000000", "royalty":{"'$ROY1'": 500}}' ---accountId $ACCOUNT_ID  --depositYocto 8540000000000000000000
+        
+    near call $CONTRACT_ID nft_mint '{"token_series_id":"7","receiver_id": "'$ACCOUNT_ID'"}' --accountId $ACCOUNT_ID --depositYocto 11280000000000000000000
+    near call $CONTRACT_ID nft_create_series '{"token_series_id":"8", "creator_id":"'$ACCOUNT_ID'","token_metadata":{"title": "Lang Biang - 008","media":"https://bafybeibkhcuq6s3drxtvyegtooc6wosudvbpzvhf5gtfy5xnwemp7mku6u.ipfs.nftstorage.link/Lang%20Biang%20%23008.png", "reference":"bafkreiceiix3c3q6eahprmo2aovs46sdkrfcrdz52c2ouojkul7uzk5zsa", "copies": 1},"price":"5000000000000000000000000", "royalty":{"'$ROY1'": 500}}' ---accountId $ACCOUNT_ID  --depositYocto 8540000000000000000000
+        
+    near call $CONTRACT_ID nft_mint '{"token_series_id":"8","receiver_id": "'$ACCOUNT_ID'"}' --accountId $ACCOUNT_ID --depositYocto 11280000000000000000000
+    near call $CONTRACT_ID nft_create_series '{"token_series_id":"9", "creator_id":"'$ACCOUNT_ID'","token_metadata":{"title": "Lang Biang - 009","media":"https://bafybeibkhcuq6s3drxtvyegtooc6wosudvbpzvhf5gtfy5xnwemp7mku6u.ipfs.nftstorage.link/Lang%20Biang%20%23009.png", "reference":"bafkreiceiix3c3q6eahprmo2aovs46sdkrfcrdz52c2ouojkul7uzk5zsa", "copies": 1},"price":"5000000000000000000000000", "royalty":{"'$ROY1'": 500}}' ---accountId $ACCOUNT_ID  --depositYocto 8540000000000000000000
+        
+    near call $CONTRACT_ID nft_mint '{"token_series_id":"9","receiver_id": "'$ACCOUNT_ID'"}' --accountId $ACCOUNT_ID --depositYocto 11280000000000000000000
+    near call $CONTRACT_ID nft_create_series '{"token_series_id":"10", "creator_id":"'$ACCOUNT_ID'","token_metadata":{"title": "Lang Biang - 010","media":"https://bafybeibkhcuq6s3drxtvyegtooc6wosudvbpzvhf5gtfy5xnwemp7mku6u.ipfs.nftstorage.link/Lang%20Biang%20%23010.png", "reference":"bafkreiceiix3c3q6eahprmo2aovs46sdkrfcrdz52c2ouojkul7uzk5zsa", "copies": 1},"price":"5000000000000000000000000", "royalty":{"'$ROY1'": 500}}' ---accountId $ACCOUNT_ID  --depositYocto 8540000000000000000000
+        
+    near call $CONTRACT_ID nft_mint '{"token_series_id":"10","receiver_id": "'$ACCOUNT_ID'"}' --accountId $ACCOUNT_ID --depositYocto 11280000000000000000000
+    near call $CONTRACT_ID nft_create_series '{"token_series_id":"11", "creator_id":"'$ACCOUNT_ID'","token_metadata":{"title": "Lang Biang - 011","media":"https://bafybeibkhcuq6s3drxtvyegtooc6wosudvbpzvhf5gtfy5xnwemp7mku6u.ipfs.nftstorage.link/Lang%20Biang%20%23011.png", "reference":"bafkreiceiix3c3q6eahprmo2aovs46sdkrfcrdz52c2ouojkul7uzk5zsa", "copies": 1},"price":"5000000000000000000000000", "royalty":{"'$ROY1'": 500}}' ---accountId $ACCOUNT_ID  --depositYocto 8540000000000000000000
+        
+    near call $CONTRACT_ID nft_mint '{"token_series_id":"11","receiver_id": "'$ACCOUNT_ID'"}' --accountId $ACCOUNT_ID --depositYocto 11280000000000000000000
+    near call $CONTRACT_ID nft_create_series '{"token_series_id":"12", "creator_id":"'$ACCOUNT_ID'","token_metadata":{"title": "Lang Biang - 012","media":"https://bafybeibkhcuq6s3drxtvyegtooc6wosudvbpzvhf5gtfy5xnwemp7mku6u.ipfs.nftstorage.link/Lang%20Biang%20%23012.png", "reference":"bafkreiceiix3c3q6eahprmo2aovs46sdkrfcrdz52c2ouojkul7uzk5zsa", "copies": 1},"price":"5000000000000000000000000", "royalty":{"'$ROY1'": 500}}' ---accountId $ACCOUNT_ID  --depositYocto 8540000000000000000000
+        
+    near call $CONTRACT_ID nft_mint '{"token_series_id":"12","receiver_id": "'$ACCOUNT_ID'"}' --accountId $ACCOUNT_ID --depositYocto 11280000000000000000000
+    near call $CONTRACT_ID nft_create_series '{"token_series_id":"13", "creator_id":"'$ACCOUNT_ID'","token_metadata":{"title": "Lang Biang - 013","media":"https://bafybeibkhcuq6s3drxtvyegtooc6wosudvbpzvhf5gtfy5xnwemp7mku6u.ipfs.nftstorage.link/Lang%20Biang%20%23013.png", "reference":"bafkreiceiix3c3q6eahprmo2aovs46sdkrfcrdz52c2ouojkul7uzk5zsa", "copies": 1},"price":"5000000000000000000000000", "royalty":{"'$ROY1'": 500}}' ---accountId $ACCOUNT_ID  --depositYocto 8540000000000000000000
+        
+    near call $CONTRACT_ID nft_mint '{"token_series_id":"13","receiver_id": "'$ACCOUNT_ID'"}' --accountId $ACCOUNT_ID --depositYocto 11280000000000000000000
+    near call $CONTRACT_ID nft_create_series '{"token_series_id":"14", "creator_id":"'$ACCOUNT_ID'","token_metadata":{"title": "Lang Biang - 014","media":"https://bafybeibkhcuq6s3drxtvyegtooc6wosudvbpzvhf5gtfy5xnwemp7mku6u.ipfs.nftstorage.link/Lang%20Biang%20%23014.png", "reference":"bafkreiceiix3c3q6eahprmo2aovs46sdkrfcrdz52c2ouojkul7uzk5zsa", "copies": 1},"price":"5000000000000000000000000", "royalty":{"'$ROY1'": 500}}' ---accountId $ACCOUNT_ID  --depositYocto 8540000000000000000000
+        
+    near call $CONTRACT_ID nft_mint '{"token_series_id":"14","receiver_id": "'$ACCOUNT_ID'"}' --accountId $ACCOUNT_ID --depositYocto 11280000000000000000000
+    near call $CONTRACT_ID nft_create_series '{"token_series_id":"15", "creator_id":"'$ACCOUNT_ID'","token_metadata":{"title": "Lang Biang - 015","media":"https://bafybeibkhcuq6s3drxtvyegtooc6wosudvbpzvhf5gtfy5xnwemp7mku6u.ipfs.nftstorage.link/Lang%20Biang%20%23015.png", "reference":"bafkreiceiix3c3q6eahprmo2aovs46sdkrfcrdz52c2ouojkul7uzk5zsa", "copies": 1},"price":"5000000000000000000000000", "royalty":{"'$ROY1'": 500}}' ---accountId $ACCOUNT_ID  --depositYocto 8540000000000000000000
+        
+    near call $CONTRACT_ID nft_mint '{"token_series_id":"15","receiver_id": "'$ACCOUNT_ID'"}' --accountId $ACCOUNT_ID --depositYocto 11280000000000000000000
+    near call $CONTRACT_ID nft_create_series '{"token_series_id":"16", "creator_id":"'$ACCOUNT_ID'","token_metadata":{"title": "Lang Biang - 016","media":"https://bafybeibkhcuq6s3drxtvyegtooc6wosudvbpzvhf5gtfy5xnwemp7mku6u.ipfs.nftstorage.link/Lang%20Biang%20%23016.png", "reference":"bafkreiceiix3c3q6eahprmo2aovs46sdkrfcrdz52c2ouojkul7uzk5zsa", "copies": 1},"price":"5000000000000000000000000", "royalty":{"'$ROY1'": 500}}' ---accountId $ACCOUNT_ID  --depositYocto 8540000000000000000000
+        
+    near call $CONTRACT_ID nft_mint '{"token_series_id":"16","receiver_id": "'$ACCOUNT_ID'"}' --accountId $ACCOUNT_ID --depositYocto 11280000000000000000000
+    near call $CONTRACT_ID nft_create_series '{"token_series_id":"17", "creator_id":"'$ACCOUNT_ID'","token_metadata":{"title": "Lang Biang - 017","media":"https://bafybeibkhcuq6s3drxtvyegtooc6wosudvbpzvhf5gtfy5xnwemp7mku6u.ipfs.nftstorage.link/Lang%20Biang%20%23017.png", "reference":"bafkreiceiix3c3q6eahprmo2aovs46sdkrfcrdz52c2ouojkul7uzk5zsa", "copies": 1},"price":"5000000000000000000000000", "royalty":{"'$ROY1'": 500}}' ---accountId $ACCOUNT_ID  --depositYocto 8540000000000000000000
+        
+    near call $CONTRACT_ID nft_mint '{"token_series_id":"17","receiver_id": "'$ACCOUNT_ID'"}' --accountId $ACCOUNT_ID --depositYocto 11280000000000000000000
+    near call $CONTRACT_ID nft_create_series '{"token_series_id":"18", "creator_id":"'$ACCOUNT_ID'","token_metadata":{"title": "Lang Biang - 018","media":"https://bafybeibkhcuq6s3drxtvyegtooc6wosudvbpzvhf5gtfy5xnwemp7mku6u.ipfs.nftstorage.link/Lang%20Biang%20%23018.png", "reference":"bafkreiceiix3c3q6eahprmo2aovs46sdkrfcrdz52c2ouojkul7uzk5zsa", "copies": 1},"price":"5000000000000000000000000", "royalty":{"'$ROY1'": 500}}' ---accountId $ACCOUNT_ID  --depositYocto 8540000000000000000000
+        
+    near call $CONTRACT_ID nft_mint '{"token_series_id":"18","receiver_id": "'$ACCOUNT_ID'"}' --accountId $ACCOUNT_ID --depositYocto 11280000000000000000000
+    near call $CONTRACT_ID nft_create_series '{"token_series_id":"19", "creator_id":"'$ACCOUNT_ID'","token_metadata":{"title": "Lang Biang - 019","media":"https://bafybeibkhcuq6s3drxtvyegtooc6wosudvbpzvhf5gtfy5xnwemp7mku6u.ipfs.nftstorage.link/Lang%20Biang%20%23019.png", "reference":"bafkreiceiix3c3q6eahprmo2aovs46sdkrfcrdz52c2ouojkul7uzk5zsa", "copies": 1},"price":"5000000000000000000000000", "royalty":{"'$ROY1'": 500}}' ---accountId $ACCOUNT_ID  --depositYocto 8540000000000000000000
+        
+    near call $CONTRACT_ID nft_mint '{"token_series_id":"19","receiver_id": "'$ACCOUNT_ID'"}' --accountId $ACCOUNT_ID --depositYocto 11280000000000000000000
+    near call $CONTRACT_ID nft_create_series '{"token_series_id":"20", "creator_id":"'$ACCOUNT_ID'","token_metadata":{"title": "Lang Biang - 020","media":"https://bafybeibkhcuq6s3drxtvyegtooc6wosudvbpzvhf5gtfy5xnwemp7mku6u.ipfs.nftstorage.link/Lang%20Biang%20%23020.png", "reference":"bafkreiceiix3c3q6eahprmo2aovs46sdkrfcrdz52c2ouojkul7uzk5zsa", "copies": 1},"price":"5000000000000000000000000", "royalty":{"'$ROY1'": 500}}' ---accountId $ACCOUNT_ID  --depositYocto 8540000000000000000000
+        
+    near call $CONTRACT_ID nft_mint '{"token_series_id":"20","receiver_id": "'$ACCOUNT_ID'"}' --accountId $ACCOUNT_ID --depositYocto 11280000000000000000000
+    near call $CONTRACT_ID nft_create_series '{"token_series_id":"21", "creator_id":"'$ACCOUNT_ID'","token_metadata":{"title": "Lang Biang - 021","media":"https://bafybeibkhcuq6s3drxtvyegtooc6wosudvbpzvhf5gtfy5xnwemp7mku6u.ipfs.nftstorage.link/Lang%20Biang%20%23021.png", "reference":"bafkreiceiix3c3q6eahprmo2aovs46sdkrfcrdz52c2ouojkul7uzk5zsa", "copies": 1},"price":"5000000000000000000000000", "royalty":{"'$ROY1'": 500}}' ---accountId $ACCOUNT_ID  --depositYocto 8540000000000000000000
+        
+    near call $CONTRACT_ID nft_mint '{"token_series_id":"21","receiver_id": "'$ACCOUNT_ID'"}' --accountId $ACCOUNT_ID --depositYocto 11280000000000000000000
+    near call $CONTRACT_ID nft_create_series '{"token_series_id":"22", "creator_id":"'$ACCOUNT_ID'","token_metadata":{"title": "Lang Biang - 022","media":"https://bafybeibkhcuq6s3drxtvyegtooc6wosudvbpzvhf5gtfy5xnwemp7mku6u.ipfs.nftstorage.link/Lang%20Biang%20%23022.png", "reference":"bafkreiceiix3c3q6eahprmo2aovs46sdkrfcrdz52c2ouojkul7uzk5zsa", "copies": 1},"price":"5000000000000000000000000", "royalty":{"'$ROY1'": 500}}' ---accountId $ACCOUNT_ID  --depositYocto 8540000000000000000000
+        
+    near call $CONTRACT_ID nft_mint '{"token_series_id":"22","receiver_id": "'$ACCOUNT_ID'"}' --accountId $ACCOUNT_ID --depositYocto 11280000000000000000000
+    near call $CONTRACT_ID nft_create_series '{"token_series_id":"23", "creator_id":"'$ACCOUNT_ID'","token_metadata":{"title": "Lang Biang - 023","media":"https://bafybeibkhcuq6s3drxtvyegtooc6wosudvbpzvhf5gtfy5xnwemp7mku6u.ipfs.nftstorage.link/Lang%20Biang%20%23023.png", "reference":"bafkreiceiix3c3q6eahprmo2aovs46sdkrfcrdz52c2ouojkul7uzk5zsa", "copies": 1},"price":"5000000000000000000000000", "royalty":{"'$ROY1'": 500}}' ---accountId $ACCOUNT_ID  --depositYocto 8540000000000000000000
+        
+    near call $CONTRACT_ID nft_mint '{"token_series_id":"23","receiver_id": "'$ACCOUNT_ID'"}' --accountId $ACCOUNT_ID --depositYocto 11280000000000000000000
+    near call $CONTRACT_ID nft_create_series '{"token_series_id":"24", "creator_id":"'$ACCOUNT_ID'","token_metadata":{"title": "Lang Biang - 024","media":"https://bafybeibkhcuq6s3drxtvyegtooc6wosudvbpzvhf5gtfy5xnwemp7mku6u.ipfs.nftstorage.link/Lang%20Biang%20%23024.png", "reference":"bafkreiceiix3c3q6eahprmo2aovs46sdkrfcrdz52c2ouojkul7uzk5zsa", "copies": 1},"price":"5000000000000000000000000", "royalty":{"'$ROY1'": 500}}' ---accountId $ACCOUNT_ID  --depositYocto 8540000000000000000000
+        
+    near call $CONTRACT_ID nft_mint '{"token_series_id":"24","receiver_id": "'$ACCOUNT_ID'"}' --accountId $ACCOUNT_ID --depositYocto 11280000000000000000000
+    near call $CONTRACT_ID nft_create_series '{"token_series_id":"25", "creator_id":"'$ACCOUNT_ID'","token_metadata":{"title": "Lang Biang - 025","media":"https://bafybeibkhcuq6s3drxtvyegtooc6wosudvbpzvhf5gtfy5xnwemp7mku6u.ipfs.nftstorage.link/Lang%20Biang%20%23025.png", "reference":"bafkreiceiix3c3q6eahprmo2aovs46sdkrfcrdz52c2ouojkul7uzk5zsa", "copies": 1},"price":"5000000000000000000000000", "royalty":{"'$ROY1'": 500}}' ---accountId $ACCOUNT_ID  --depositYocto 8540000000000000000000
+        
+    near call $CONTRACT_ID nft_mint '{"token_series_id":"25","receiver_id": "'$ACCOUNT_ID'"}' --accountId $ACCOUNT_ID --depositYocto 11280000000000000000000
+    near call $CONTRACT_ID nft_create_series '{"token_series_id":"26", "creator_id":"'$ACCOUNT_ID'","token_metadata":{"title": "Lang Biang - 026","media":"https://bafybeibkhcuq6s3drxtvyegtooc6wosudvbpzvhf5gtfy5xnwemp7mku6u.ipfs.nftstorage.link/Lang%20Biang%20%23026.png", "reference":"bafkreiceiix3c3q6eahprmo2aovs46sdkrfcrdz52c2ouojkul7uzk5zsa", "copies": 1},"price":"5000000000000000000000000", "royalty":{"'$ROY1'": 500}}' ---accountId $ACCOUNT_ID  --depositYocto 8540000000000000000000
+        
+    near call $CONTRACT_ID nft_mint '{"token_series_id":"26","receiver_id": "'$ACCOUNT_ID'"}' --accountId $ACCOUNT_ID --depositYocto 11280000000000000000000
+    near call $CONTRACT_ID nft_create_series '{"token_series_id":"27", "creator_id":"'$ACCOUNT_ID'","token_metadata":{"title": "Lang Biang - 027","media":"https://bafybeibkhcuq6s3drxtvyegtooc6wosudvbpzvhf5gtfy5xnwemp7mku6u.ipfs.nftstorage.link/Lang%20Biang%20%23027.png", "reference":"bafkreiceiix3c3q6eahprmo2aovs46sdkrfcrdz52c2ouojkul7uzk5zsa", "copies": 1},"price":"5000000000000000000000000", "royalty":{"'$ROY1'": 500}}' ---accountId $ACCOUNT_ID  --depositYocto 8540000000000000000000
+        
+    near call $CONTRACT_ID nft_mint '{"token_series_id":"27","receiver_id": "'$ACCOUNT_ID'"}' --accountId $ACCOUNT_ID --depositYocto 11280000000000000000000
+    near call $CONTRACT_ID nft_create_series '{"token_series_id":"28", "creator_id":"'$ACCOUNT_ID'","token_metadata":{"title": "Lang Biang - 028","media":"https://bafybeibkhcuq6s3drxtvyegtooc6wosudvbpzvhf5gtfy5xnwemp7mku6u.ipfs.nftstorage.link/Lang%20Biang%20%23028.png", "reference":"bafkreiceiix3c3q6eahprmo2aovs46sdkrfcrdz52c2ouojkul7uzk5zsa", "copies": 1},"price":"5000000000000000000000000", "royalty":{"'$ROY1'": 500}}' ---accountId $ACCOUNT_ID  --depositYocto 8540000000000000000000
+        
+    near call $CONTRACT_ID nft_mint '{"token_series_id":"28","receiver_id": "'$ACCOUNT_ID'"}' --accountId $ACCOUNT_ID --depositYocto 11280000000000000000000
+    near call $CONTRACT_ID nft_create_series '{"token_series_id":"29", "creator_id":"'$ACCOUNT_ID'","token_metadata":{"title": "Lang Biang - 029","media":"https://bafybeibkhcuq6s3drxtvyegtooc6wosudvbpzvhf5gtfy5xnwemp7mku6u.ipfs.nftstorage.link/Lang%20Biang%20%23029.png", "reference":"bafkreiceiix3c3q6eahprmo2aovs46sdkrfcrdz52c2ouojkul7uzk5zsa", "copies": 1},"price":"5000000000000000000000000", "royalty":{"'$ROY1'": 500}}' ---accountId $ACCOUNT_ID  --depositYocto 8540000000000000000000
+        
+    near call $CONTRACT_ID nft_mint '{"token_series_id":"29","receiver_id": "'$ACCOUNT_ID'"}' --accountId $ACCOUNT_ID --depositYocto 11280000000000000000000
+    near call $CONTRACT_ID nft_create_series '{"token_series_id":"30", "creator_id":"'$ACCOUNT_ID'","token_metadata":{"title": "Lang Biang - 030","media":"https://bafybeibkhcuq6s3drxtvyegtooc6wosudvbpzvhf5gtfy5xnwemp7mku6u.ipfs.nftstorage.link/Lang%20Biang%20%23030.png", "reference":"bafkreiceiix3c3q6eahprmo2aovs46sdkrfcrdz52c2ouojkul7uzk5zsa", "copies": 1},"price":"5000000000000000000000000", "royalty":{"'$ROY1'": 500}}' ---accountId $ACCOUNT_ID  --depositYocto 8540000000000000000000
+        
+    near call $CONTRACT_ID nft_mint '{"token_series_id":"30","receiver_id": "'$ACCOUNT_ID'"}' --accountId $ACCOUNT_ID --depositYocto 11280000000000000000000
+    near call $CONTRACT_ID nft_create_series '{"token_series_id":"31", "creator_id":"'$ACCOUNT_ID'","token_metadata":{"title": "Lang Biang - 031","media":"https://bafybeibkhcuq6s3drxtvyegtooc6wosudvbpzvhf5gtfy5xnwemp7mku6u.ipfs.nftstorage.link/Lang%20Biang%20%23031.png", "reference":"bafkreiceiix3c3q6eahprmo2aovs46sdkrfcrdz52c2ouojkul7uzk5zsa", "copies": 1},"price":"5000000000000000000000000", "royalty":{"'$ROY1'": 500}}' ---accountId $ACCOUNT_ID  --depositYocto 8540000000000000000000
+        
+    near call $CONTRACT_ID nft_mint '{"token_series_id":"31","receiver_id": "'$ACCOUNT_ID'"}' --accountId $ACCOUNT_ID --depositYocto 11280000000000000000000
+    near call $CONTRACT_ID nft_create_series '{"token_series_id":"32", "creator_id":"'$ACCOUNT_ID'","token_metadata":{"title": "Lang Biang - 032","media":"https://bafybeibkhcuq6s3drxtvyegtooc6wosudvbpzvhf5gtfy5xnwemp7mku6u.ipfs.nftstorage.link/Lang%20Biang%20%23032.png", "reference":"bafkreiceiix3c3q6eahprmo2aovs46sdkrfcrdz52c2ouojkul7uzk5zsa", "copies": 1},"price":"5000000000000000000000000", "royalty":{"'$ROY1'": 500}}' ---accountId $ACCOUNT_ID  --depositYocto 8540000000000000000000
+        
+    near call $CONTRACT_ID nft_mint '{"token_series_id":"32","receiver_id": "'$ACCOUNT_ID'"}' --accountId $ACCOUNT_ID --depositYocto 11280000000000000000000
+    near call $CONTRACT_ID nft_create_series '{"token_series_id":"33", "creator_id":"'$ACCOUNT_ID'","token_metadata":{"title": "Lang Biang - 033","media":"https://bafybeibkhcuq6s3drxtvyegtooc6wosudvbpzvhf5gtfy5xnwemp7mku6u.ipfs.nftstorage.link/Lang%20Biang%20%23033.png", "reference":"bafkreiceiix3c3q6eahprmo2aovs46sdkrfcrdz52c2ouojkul7uzk5zsa", "copies": 1},"price":"5000000000000000000000000", "royalty":{"'$ROY1'": 500}}' ---accountId $ACCOUNT_ID  --depositYocto 8540000000000000000000
+        
+    near call $CONTRACT_ID nft_mint '{"token_series_id":"33","receiver_id": "'$ACCOUNT_ID'"}' --accountId $ACCOUNT_ID --depositYocto 11280000000000000000000
+    near call $CONTRACT_ID nft_create_series '{"token_series_id":"34", "creator_id":"'$ACCOUNT_ID'","token_metadata":{"title": "Lang Biang - 034","media":"https://bafybeibkhcuq6s3drxtvyegtooc6wosudvbpzvhf5gtfy5xnwemp7mku6u.ipfs.nftstorage.link/Lang%20Biang%20%23034.png", "reference":"bafkreiceiix3c3q6eahprmo2aovs46sdkrfcrdz52c2ouojkul7uzk5zsa", "copies": 1},"price":"5000000000000000000000000", "royalty":{"'$ROY1'": 500}}' ---accountId $ACCOUNT_ID  --depositYocto 8540000000000000000000
+        
+    near call $CONTRACT_ID nft_mint '{"token_series_id":"34","receiver_id": "'$ACCOUNT_ID'"}' --accountId $ACCOUNT_ID --depositYocto 11280000000000000000000
+    near call $CONTRACT_ID nft_create_series '{"token_series_id":"35", "creator_id":"'$ACCOUNT_ID'","token_metadata":{"title": "Lang Biang - 035","media":"https://bafybeibkhcuq6s3drxtvyegtooc6wosudvbpzvhf5gtfy5xnwemp7mku6u.ipfs.nftstorage.link/Lang%20Biang%20%23035.png", "reference":"bafkreiceiix3c3q6eahprmo2aovs46sdkrfcrdz52c2ouojkul7uzk5zsa", "copies": 1},"price":"5000000000000000000000000", "royalty":{"'$ROY1'": 500}}' ---accountId $ACCOUNT_ID  --depositYocto 8540000000000000000000
+        
+    near call $CONTRACT_ID nft_mint '{"token_series_id":"35","receiver_id": "'$ACCOUNT_ID'"}' --accountId $ACCOUNT_ID --depositYocto 11280000000000000000000
+    near call $CONTRACT_ID nft_create_series '{"token_series_id":"36", "creator_id":"'$ACCOUNT_ID'","token_metadata":{"title": "Lang Biang - 036","media":"https://bafybeibkhcuq6s3drxtvyegtooc6wosudvbpzvhf5gtfy5xnwemp7mku6u.ipfs.nftstorage.link/Lang%20Biang%20%23036.png", "reference":"bafkreiceiix3c3q6eahprmo2aovs46sdkrfcrdz52c2ouojkul7uzk5zsa", "copies": 1},"price":"5000000000000000000000000", "royalty":{"'$ROY1'": 500}}' ---accountId $ACCOUNT_ID  --depositYocto 8540000000000000000000
+        
+    near call $CONTRACT_ID nft_mint '{"token_series_id":"36","receiver_id": "'$ACCOUNT_ID'"}' --accountId $ACCOUNT_ID --depositYocto 11280000000000000000000
+    near call $CONTRACT_ID nft_create_series '{"token_series_id":"37", "creator_id":"'$ACCOUNT_ID'","token_metadata":{"title": "Lang Biang - 037","media":"https://bafybeibkhcuq6s3drxtvyegtooc6wosudvbpzvhf5gtfy5xnwemp7mku6u.ipfs.nftstorage.link/Lang%20Biang%20%23037.png", "reference":"bafkreiceiix3c3q6eahprmo2aovs46sdkrfcrdz52c2ouojkul7uzk5zsa", "copies": 1},"price":"5000000000000000000000000", "royalty":{"'$ROY1'": 500}}' ---accountId $ACCOUNT_ID  --depositYocto 8540000000000000000000
+        
+    near call $CONTRACT_ID nft_mint '{"token_series_id":"37","receiver_id": "'$ACCOUNT_ID'"}' --accountId $ACCOUNT_ID --depositYocto 11280000000000000000000
+    near call $CONTRACT_ID nft_create_series '{"token_series_id":"38", "creator_id":"'$ACCOUNT_ID'","token_metadata":{"title": "Lang Biang - 038","media":"https://bafybeibkhcuq6s3drxtvyegtooc6wosudvbpzvhf5gtfy5xnwemp7mku6u.ipfs.nftstorage.link/Lang%20Biang%20%23038.png", "reference":"bafkreiceiix3c3q6eahprmo2aovs46sdkrfcrdz52c2ouojkul7uzk5zsa", "copies": 1},"price":"5000000000000000000000000", "royalty":{"'$ROY1'": 500}}' ---accountId $ACCOUNT_ID  --depositYocto 8540000000000000000000
+        
+    near call $CONTRACT_ID nft_mint '{"token_series_id":"38","receiver_id": "'$ACCOUNT_ID'"}' --accountId $ACCOUNT_ID --depositYocto 11280000000000000000000
+    near call $CONTRACT_ID nft_create_series '{"token_series_id":"39", "creator_id":"'$ACCOUNT_ID'","token_metadata":{"title": "Lang Biang - 039","media":"https://bafybeibkhcuq6s3drxtvyegtooc6wosudvbpzvhf5gtfy5xnwemp7mku6u.ipfs.nftstorage.link/Lang%20Biang%20%23039.png", "reference":"bafkreiceiix3c3q6eahprmo2aovs46sdkrfcrdz52c2ouojkul7uzk5zsa", "copies": 1},"price":"5000000000000000000000000", "royalty":{"'$ROY1'": 500}}' ---accountId $ACCOUNT_ID  --depositYocto 8540000000000000000000
+        
+    near call $CONTRACT_ID nft_mint '{"token_series_id":"39","receiver_id": "'$ACCOUNT_ID'"}' --accountId $ACCOUNT_ID --depositYocto 11280000000000000000000
+    near call $CONTRACT_ID nft_create_series '{"token_series_id":"40", "creator_id":"'$ACCOUNT_ID'","token_metadata":{"title": "Lang Biang - 040","media":"https://bafybeibkhcuq6s3drxtvyegtooc6wosudvbpzvhf5gtfy5xnwemp7mku6u.ipfs.nftstorage.link/Lang%20Biang%20%23040.png", "reference":"bafkreiceiix3c3q6eahprmo2aovs46sdkrfcrdz52c2ouojkul7uzk5zsa", "copies": 1},"price":"5000000000000000000000000", "royalty":{"'$ROY1'": 500}}' ---accountId $ACCOUNT_ID  --depositYocto 8540000000000000000000
+        
+    near call $CONTRACT_ID nft_mint '{"token_series_id":"40","receiver_id": "'$ACCOUNT_ID'"}' --accountId $ACCOUNT_ID --depositYocto 11280000000000000000000
+    near call $CONTRACT_ID nft_create_series '{"token_series_id":"41", "creator_id":"'$ACCOUNT_ID'","token_metadata":{"title": "Lang Biang - 041","media":"https://bafybeibkhcuq6s3drxtvyegtooc6wosudvbpzvhf5gtfy5xnwemp7mku6u.ipfs.nftstorage.link/Lang%20Biang%20%23041.png", "reference":"bafkreiceiix3c3q6eahprmo2aovs46sdkrfcrdz52c2ouojkul7uzk5zsa", "copies": 1},"price":"5000000000000000000000000", "royalty":{"'$ROY1'": 500}}' ---accountId $ACCOUNT_ID  --depositYocto 8540000000000000000000
+        
+    near call $CONTRACT_ID nft_mint '{"token_series_id":"41","receiver_id": "'$ACCOUNT_ID'"}' --accountId $ACCOUNT_ID --depositYocto 11280000000000000000000
+    near call $CONTRACT_ID nft_create_series '{"token_series_id":"42", "creator_id":"'$ACCOUNT_ID'","token_metadata":{"title": "Lang Biang - 042","media":"https://bafybeibkhcuq6s3drxtvyegtooc6wosudvbpzvhf5gtfy5xnwemp7mku6u.ipfs.nftstorage.link/Lang%20Biang%20%23042.png", "reference":"bafkreiceiix3c3q6eahprmo2aovs46sdkrfcrdz52c2ouojkul7uzk5zsa", "copies": 1},"price":"5000000000000000000000000", "royalty":{"'$ROY1'": 500}}' ---accountId $ACCOUNT_ID  --depositYocto 8540000000000000000000
+        
+    near call $CONTRACT_ID nft_mint '{"token_series_id":"42","receiver_id": "'$ACCOUNT_ID'"}' --accountId $ACCOUNT_ID --depositYocto 11280000000000000000000
+    near call $CONTRACT_ID nft_create_series '{"token_series_id":"43", "creator_id":"'$ACCOUNT_ID'","token_metadata":{"title": "Lang Biang - 043","media":"https://bafybeibkhcuq6s3drxtvyegtooc6wosudvbpzvhf5gtfy5xnwemp7mku6u.ipfs.nftstorage.link/Lang%20Biang%20%23043.png", "reference":"bafkreiceiix3c3q6eahprmo2aovs46sdkrfcrdz52c2ouojkul7uzk5zsa", "copies": 1},"price":"5000000000000000000000000", "royalty":{"'$ROY1'": 500}}' ---accountId $ACCOUNT_ID  --depositYocto 8540000000000000000000
+        
+    near call $CONTRACT_ID nft_mint '{"token_series_id":"43","receiver_id": "'$ACCOUNT_ID'"}' --accountId $ACCOUNT_ID --depositYocto 11280000000000000000000
+    near call $CONTRACT_ID nft_create_series '{"token_series_id":"44", "creator_id":"'$ACCOUNT_ID'","token_metadata":{"title": "Lang Biang - 044","media":"https://bafybeibkhcuq6s3drxtvyegtooc6wosudvbpzvhf5gtfy5xnwemp7mku6u.ipfs.nftstorage.link/Lang%20Biang%20%23044.png", "reference":"bafkreiceiix3c3q6eahprmo2aovs46sdkrfcrdz52c2ouojkul7uzk5zsa", "copies": 1},"price":"5000000000000000000000000", "royalty":{"'$ROY1'": 500}}' ---accountId $ACCOUNT_ID  --depositYocto 8540000000000000000000
+        
+    near call $CONTRACT_ID nft_mint '{"token_series_id":"44","receiver_id": "'$ACCOUNT_ID'"}' --accountId $ACCOUNT_ID --depositYocto 11280000000000000000000
+    near call $CONTRACT_ID nft_create_series '{"token_series_id":"45", "creator_id":"'$ACCOUNT_ID'","token_metadata":{"title": "Lang Biang - 045","media":"https://bafybeibkhcuq6s3drxtvyegtooc6wosudvbpzvhf5gtfy5xnwemp7mku6u.ipfs.nftstorage.link/Lang%20Biang%20%23045.png", "reference":"bafkreiceiix3c3q6eahprmo2aovs46sdkrfcrdz52c2ouojkul7uzk5zsa", "copies": 1},"price":"5000000000000000000000000", "royalty":{"'$ROY1'": 500}}' ---accountId $ACCOUNT_ID  --depositYocto 8540000000000000000000
+        
+    near call $CONTRACT_ID nft_mint '{"token_series_id":"45","receiver_id": "'$ACCOUNT_ID'"}' --accountId $ACCOUNT_ID --depositYocto 11280000000000000000000
+    near call $CONTRACT_ID nft_create_series '{"token_series_id":"46", "creator_id":"'$ACCOUNT_ID'","token_metadata":{"title": "Lang Biang - 046","media":"https://bafybeibkhcuq6s3drxtvyegtooc6wosudvbpzvhf5gtfy5xnwemp7mku6u.ipfs.nftstorage.link/Lang%20Biang%20%23046.png", "reference":"bafkreiceiix3c3q6eahprmo2aovs46sdkrfcrdz52c2ouojkul7uzk5zsa", "copies": 1},"price":"5000000000000000000000000", "royalty":{"'$ROY1'": 500}}' ---accountId $ACCOUNT_ID  --depositYocto 8540000000000000000000
+        
+    near call $CONTRACT_ID nft_mint '{"token_series_id":"46","receiver_id": "'$ACCOUNT_ID'"}' --accountId $ACCOUNT_ID --depositYocto 11280000000000000000000
+    near call $CONTRACT_ID nft_create_series '{"token_series_id":"47", "creator_id":"'$ACCOUNT_ID'","token_metadata":{"title": "Lang Biang - 047","media":"https://bafybeibkhcuq6s3drxtvyegtooc6wosudvbpzvhf5gtfy5xnwemp7mku6u.ipfs.nftstorage.link/Lang%20Biang%20%23047.png", "reference":"bafkreiceiix3c3q6eahprmo2aovs46sdkrfcrdz52c2ouojkul7uzk5zsa", "copies": 1},"price":"5000000000000000000000000", "royalty":{"'$ROY1'": 500}}' ---accountId $ACCOUNT_ID  --depositYocto 8540000000000000000000
+        
+    near call $CONTRACT_ID nft_mint '{"token_series_id":"47","receiver_id": "'$ACCOUNT_ID'"}' --accountId $ACCOUNT_ID --depositYocto 11280000000000000000000
+    near call $CONTRACT_ID nft_create_series '{"token_series_id":"48", "creator_id":"'$ACCOUNT_ID'","token_metadata":{"title": "Lang Biang - 048","media":"https://bafybeibkhcuq6s3drxtvyegtooc6wosudvbpzvhf5gtfy5xnwemp7mku6u.ipfs.nftstorage.link/Lang%20Biang%20%23048.png", "reference":"bafkreiceiix3c3q6eahprmo2aovs46sdkrfcrdz52c2ouojkul7uzk5zsa", "copies": 1},"price":"5000000000000000000000000", "royalty":{"'$ROY1'": 500}}' ---accountId $ACCOUNT_ID  --depositYocto 8540000000000000000000
+        
+    near call $CONTRACT_ID nft_mint '{"token_series_id":"48","receiver_id": "'$ACCOUNT_ID'"}' --accountId $ACCOUNT_ID --depositYocto 11280000000000000000000
+    near call $CONTRACT_ID nft_create_series '{"token_series_id":"49", "creator_id":"'$ACCOUNT_ID'","token_metadata":{"title": "Lang Biang - 049","media":"https://bafybeibkhcuq6s3drxtvyegtooc6wosudvbpzvhf5gtfy5xnwemp7mku6u.ipfs.nftstorage.link/Lang%20Biang%20%23049.png", "reference":"bafkreiceiix3c3q6eahprmo2aovs46sdkrfcrdz52c2ouojkul7uzk5zsa", "copies": 1},"price":"5000000000000000000000000", "royalty":{"'$ROY1'": 500}}' ---accountId $ACCOUNT_ID  --depositYocto 8540000000000000000000
+        
+    near call $CONTRACT_ID nft_mint '{"token_series_id":"49","receiver_id": "'$ACCOUNT_ID'"}' --accountId $ACCOUNT_ID --depositYocto 11280000000000000000000
+    near call $CONTRACT_ID nft_create_series '{"token_series_id":"50", "creator_id":"'$ACCOUNT_ID'","token_metadata":{"title": "Lang Biang - 050","media":"https://bafybeibkhcuq6s3drxtvyegtooc6wosudvbpzvhf5gtfy5xnwemp7mku6u.ipfs.nftstorage.link/Lang%20Biang%20%23050.png", "reference":"bafkreiceiix3c3q6eahprmo2aovs46sdkrfcrdz52c2ouojkul7uzk5zsa", "copies": 1},"price":"5000000000000000000000000", "royalty":{"'$ROY1'": 500}}' ---accountId $ACCOUNT_ID  --depositYocto 8540000000000000000000
+        
+    near call $CONTRACT_ID nft_mint '{"token_series_id":"50","receiver_id": "'$ACCOUNT_ID'"}' --accountId $ACCOUNT_ID --depositYocto 11280000000000000000000
+    
